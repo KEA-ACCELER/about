@@ -13,7 +13,7 @@ function Vision() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h2>System Architecture</h2>
+          <h2>Chatbot</h2>
           <p>Chatbots will be more intelligent, empathetic, and personalized. 
             <br></br> Chatbots will be designed to understand the context of a conversation and provide relevant and personalized responses. </p>
         </Carousel.Caption>

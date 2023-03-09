@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet } from 'react-router-dom';
+import './Layout.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Layout() {
@@ -9,7 +10,15 @@ function Layout() {
     <div>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="/">Acceler</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <div id="cropped_logo_acceler">
+              <img
+                className="logo_acceler"
+                src={require("../assets/acceler.png")}
+                alt=""
+              />
+            </div>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
