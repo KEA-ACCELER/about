@@ -1,6 +1,6 @@
 # About
 
-Instruction page of KEA-ACCELER Team.
+Introduction page of KEA-ACCELER Team.
 
 ## Getting Started with Create React App
 
