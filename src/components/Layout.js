@@ -27,7 +27,8 @@ function Layout() {
               <Nav.Link href="vision">Vision</Nav.Link>
               <Nav.Link href="teaminfo">Team Info</Nav.Link>
               <Nav.Link href="contact">Contact</Nav.Link>
-            </Nav><Nav>
+            </Nav>
+            <Nav>
               <Nav.Link href="https://github.com/KEA-ACCELER"><FaGithub size={24}/> Github</Nav.Link>
             </Nav>
           </Navbar.Collapse>
