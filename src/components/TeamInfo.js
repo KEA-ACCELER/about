@@ -3,7 +3,14 @@ import React from 'react'
 export default function TeamInfo() {
   return (
     <div id='d0'>
-      <div class="text_1">
+
+     
+      <div className='teaminfo_description' >
+      <h1>"Advanced Coding, Cloud Engineering, and Lifelong Execution with Reliability"</h1>
+      </div>
+
+
+      <div class="text_1"> 
         <h1>Team members</h1>
       </div>
 

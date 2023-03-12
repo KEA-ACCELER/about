@@ -75,20 +75,23 @@ div {
 div#d1{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 7%;
+  padding-top: 5%;
   font-family: "Ubuntu";
 }
 
 .mem_group {
   text-align: center;
   margin: auto;
+  padding-bottom: 5%;
 
 }
 
 div#d0{
   padding-top: 7%;
   font-family: "Ubuntu";
+
 }
 
 .text_1{
@@ -111,3 +114,13 @@ div#d0{
   border-radius: 20%;
   background-color:whitesmoke
 }
+
+.teaminfo_description{
+  font-size: 0.5em;
+  /* padding-top: 2%; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 8%;
+  padding-bottom: 8%;
+}
+
