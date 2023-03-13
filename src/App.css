@@ -87,14 +87,18 @@ div {
 }
 
 div#d1 {
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
+    text-align: center;
     justify-content: space-between;
     padding-top: 7%;
     font-family: "Ubuntu";
 }
 
 .mem_group {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
     text-align: center;
     margin: auto;
 }
@@ -115,6 +119,9 @@ div#d0 {
 }
 
 .profile_img {
+    min-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
     border-radius: 20%;
     background-color: whitesmoke;
 }
