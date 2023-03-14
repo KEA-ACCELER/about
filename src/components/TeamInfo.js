@@ -10,7 +10,7 @@ export default function TeamInfo() {
       <div id='d1'>
         <Card className='mem_group'>
           <Card.Body>
-            <img name="seungil" className="profile_img" src={require("../assets/Seungil.png")} alt="profile" />
+            <img name="seungil" className="profile_img" src={require("../assets/profile/Seungil.png")} alt="profile" />
             <p className="text_name"><b>Seungil Han</b></p>
             <p>thesence01@gachon.ac.kr</p>
           </Card.Body>
@@ -18,7 +18,7 @@ export default function TeamInfo() {
 
         <Card className='mem_group'>
           <Card.Body>
-            <img name="jimin" className="profile_img" src={require("../assets/Jimin.png")} alt="profile" />
+            <img name="jimin" className="profile_img" src={require("../assets/profile/Jimin.png")} alt="profile" />
             <p className="text_name"><b>Jimin Lee</b></p>
             <p>reakin@gachon.ac.kr</p>
           </Card.Body>
@@ -26,7 +26,7 @@ export default function TeamInfo() {
 
         <Card className='mem_group'>
           <Card.Body>
-            <img name="doyeon" className="profile_img" src={require("../assets/Doyeon.png")} alt="profile" />
+            <img name="doyeon" className="profile_img" src={require("../assets/profile/Doyeon.png")} alt="profile" />
             <p className="text_name"><b>Doyeon Hyun</b></p>
             <p>118ssun@gachon.ac.kr</p>
           </Card.Body>
@@ -34,7 +34,7 @@ export default function TeamInfo() {
 
         <Card className='mem_group'>
           <Card.Body>
-            <img name="bumgi" className="profile_img" src={require("../assets/Beomgi.png")} alt="profile" />
+            <img name="bumgi" className="profile_img" src={require("../assets/profile/Beomgi.png")} alt="profile" />
             <p className="text_name"><b>Beomgi Kim</b></p>
             <p>chromato99@gachon.ac.kr</p>
           </Card.Body>
@@ -42,7 +42,7 @@ export default function TeamInfo() {
 
         <Card className='mem_group'>
           <Card.Body>
-            <img name="yejin" className="profile_img" src={require("../assets/Yejin.png")} alt="profile" />
+            <img name="yejin" className="profile_img" src={require("../assets/profile/Yejin.png")} alt="profile" />
             <p className="text_name"><b>Yejin Choi</b></p>
             <p>chldppwls12@gachon.ac.kr</p>
           </Card.Body>
