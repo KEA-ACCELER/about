@@ -1,9 +1,10 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import { Outlet } from 'react-router-dom';
-import './Layout.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { Outlet } from "react-router-dom";
+import { FaGithub } from 'react-icons/fa';
+import "./Layout.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Layout() {
   return (
@@ -26,6 +27,9 @@ function Layout() {
               <Nav.Link href="vision">Vision</Nav.Link>
               <Nav.Link href="teaminfo">Team Info</Nav.Link>
               <Nav.Link href="contact">Contact</Nav.Link>
+            </Nav>
+            <Nav>
+              <Nav.Link href="https://github.com/KEA-ACCELER"><FaGithub size={24}/> Github</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
