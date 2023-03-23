@@ -17,6 +17,18 @@ div {
     padding: 0; */
 }
 
+#cropped_logo_acceler {
+    width: 160px;
+    height: 40px;
+    overflow: hidden;
+}
+
+#cropped_logo_acceler img {
+    width: 240px;
+    height: 155.36px;
+    margin: -57.68px 0px 0px -40px;
+}
+
 .intro_wrapper {
     display: flex;
     justify-content: space-between;

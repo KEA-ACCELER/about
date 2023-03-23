@@ -1,9 +1,9 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Outlet } from "react-router-dom";
 import { FaGithub } from 'react-icons/fa';
-import "./Layout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Layout() {
@@ -16,7 +16,7 @@ function Layout() {
               <img
                 className="logo_acceler"
                 src={require("../assets/acceler.png")}
-                alt=""
+                alt="acceler-logo"
               />
             </div>
           </Navbar.Brand>
@@ -27,9 +27,12 @@ function Layout() {
               <Nav.Link href="vision">Vision</Nav.Link>
               <Nav.Link href="teaminfo">Team Info</Nav.Link>
               <Nav.Link href="contact">Contact</Nav.Link>
+              <NavDropdown title="Projects" id="basic-nav-dropdown">
+                <NavDropdown.Item href="https://aform.acceler.kr">A-Form</NavDropdown.Item>
+              </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="https://github.com/KEA-ACCELER"><FaGithub size={24}/> Github</Nav.Link>
+              <Nav.Link href="https://github.com/KEA-ACCELER"><FaGithub size={24} /> Github</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
