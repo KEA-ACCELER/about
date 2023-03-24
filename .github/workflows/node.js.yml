@@ -39,30 +39,27 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: npm ci
+    - run: npm run build
+    - run: npm test
 
-    - name: Setup Pages
+    - if: ${{ github.repository == 'KEA-ACCELER/about' && github.event_name != 'pull_request' }}
+      name: Setup Pages
       uses: actions/configure-pages@v3
 
-    - name: Install modules
-      run: npm ci
-
-    - name: Run build
-      run: npm run build
-
-    - name: Run test
-      run: npm test
-
-    - name: Upload pages artifact
+    - if: ${{ github.repository == 'KEA-ACCELER/about' && github.event_name != 'pull_request' }}
+      name: Upload pages artifact
       uses: actions/upload-pages-artifact@v1
       with:
         path: ./build
 
   deploy:
+    if: ${{ github.repository == 'KEA-ACCELER/about' && github.event_name != 'pull_request' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
